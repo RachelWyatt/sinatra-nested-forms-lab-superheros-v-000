@@ -14,6 +14,9 @@ class App < Sinatra::Base
       params["team"]["hero"].each do |data|
         Hero.new(data["name"], data["power"], data["bio"])
       end
+
+      @heroes = Hero.all
+      
       erb :team
     end
 

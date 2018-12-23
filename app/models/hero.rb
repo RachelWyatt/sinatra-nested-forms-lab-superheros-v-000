@@ -5,7 +5,6 @@ class Hero
     @name = name
     @power = power
     @bio = bio
-
   end
 
 

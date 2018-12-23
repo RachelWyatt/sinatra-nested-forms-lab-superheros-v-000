@@ -1,16 +1,16 @@
-class Team 
-  attr_accessor :name, :motto 
+class Team
+  attr_accessor :name, :motto
 
   @@all = []
 
   def initialize(name, motto)
-    @name = name 
+    @name = name
     @motto = motto
     @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
 
